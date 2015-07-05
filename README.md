@@ -1,23 +1,69 @@
-# vfdademo
-Demo app for testing cool new technologies using NodeJS, Express, Angurlar and other ...
+#Vencore’s Approach – Pool 3
 
-pre:
-nodejs
-npm
-bower
+**Vencore Prototype URL**:  http://agiledemo.vencore.com  
+**Evidence URL**:  https://github.com/vencoreinc/18FAGILEPROTOTYPE/wiki/Evidence-a
+##Prototype Summary
+**Product Vision</b>**:  _“Inform consumers about product recalls in their area to increase public safety and awareness”_. 
 
-npm init
-npm install --save express
-npm install --save-dev  grunt
-npm install --save request
+Consumers who purchase food, devices, and drugs may be impacted by product recalls. In an effort to increase consumer’s awareness of product recalls distributed in the consumer’s geographical area of interest, our product delivers an easy and intuitive UI for multiple device types while delivering valuable public safety information about product recalls. 
+
+Our application is hosted at http://agiledemo.vencore.com and is accessible via desktop browser, tablet or mobile devices and is 508 compliant.  Additionally Vencore delivered a RESTful API service that aggregates data from the OpenFDA API for our application to consume, and an Android application.
+
+##Narrative for Vencore’s Approach
+
+Vencore is well-positioned to contribute to 18F’s Agile initiative. For over 16 years, we have supported GSA PBS with software development solutions, and we have invested heavily over the past 3 years to improve and optimize our approach.  Vencore management is confident this approach is well suited for RFQ BPA for Agile Delivery Services - 4QTFHS150004 and allocated a set amount of funds to invest in responding (Play5). 
+
+We have assembled an experienced multi-disciplinary agile team for this initiative and assigned the Product Manger to be accountable for the prototype (Play6, Play7).  Our Product  Manager worked with representative consumers of the OpenFDA API data during the inspiration phase of our human centered design approach to generate innovative ideas and create an intuitive and valuable product to meet their needs (Play1, Play3).  
+
+The Agile Coach, also serving as the Scrum Master (Delivery Manager), led the team in creating a narrative using a story mapping technique that laid out a horizontal flow of user activities and features for the application.  The team then broke the features down into smaller stories through successive vertical slices directly underneath the features in preparation for Sprints.  Both functional and non-functional stories, acceptance criteria and dependencies were identified, created and prioritized.  From this depth, horizontal slices of the story map were created to realize specific goals and create a Minimal Viable Product (MVP) (Play2).   All goals and user stories were captured in our Agile Application Lifecycle Management tool (Microsoft Team Foundation Server). 
+
+Concurrent with the Product Manager defining the product vision and key success factors, the delivery team (developers, testers, analysts, DevOps engineer, and architect) began the process of familiarizing themselves with the OpenFDA APIs, identifying modern open-source technologies and setting up a collaborative workspace and development environment for the prototype (Play8, Play13). The team successfully installed the architecture and tools required (NodeJS, Express, Json, Angular, HTML 5, BootStrap, Google Charts, NodeJsScan-Master for security (Play11)) in the DevOps environment.
+
+Our DevOps engineer extended our existing DevOps environment that uses Git for source control, Jenkins for Continuous Integration server, Grunt for builds and invoking unit tests, Rest API unit test cases are written using Mocha framework, Docker for containerization, and Protractor framework built on Selenium for integration testing, and PhantomJS a headless browser used to support integration testing (Play10).  We use the AWS cloud (IaaS) to provision required PaaS services by deploying the application as a Docker file to an AWS EC2 instance (Play9, Play11).  Once deployed the EC2 instance creates a new Docker container based on the Docker file, copies all the necessary source code, and starts the server exposing the application on a given port.  Our team leverages the AWS provided APIs for automation and monitoring, an approach which enables rapid provisioning and deployment. 
+
+Vencore’s Agile process for this prototype challenge was based on ScrumXP and Lean practices. We applied Work in Progress (WIP) limits on work queues and resources to maximize throughput and reduce bottlenecks.  Our proven software development methodology incorporates the flexibility and agility of Scrum techniques and concepts’, including continuous software builds and automated testing while allowing for continual reassessment of Product Manager needs and priorities. 
+
+We delivered the prototype release through multiple one-day Sprint iterations (Play4). These Sprints included all necessary development and testing tasks required to complete the story and meet the Definition of Done (DoD) as defined by the team.  The DoD exit criteria established included “working software”, i.e., code that was integrated, fully tested and potentially shippable.  During the Sprints, we held morning and afternoon 5 minute stand-ups to ensure we were on track and address impediments.  At the end of the day there was a Sprint review, retrospective and a planning meeting for the next Sprint.
+
+During ideation, our human factors expert used Vencore’s design guidelines and lean UI/UX practices working with our Product Manager to protosketch the layouts and visual representation of our target website and mobile app.   This was an iterative process as subsequent feedback was gathered from our representative consumer group, the UI and flow was refined and modified (Play12).  Vencore ran 508 tests to ensure UI accessibility.
+
+Our agile approach is built on the assumption that changes (e.g., new requests, discovery, and feedback) are a fact of development that necessitate adjustments and require the team to learn and pivot.   During the prototype effort, such changes were required.  Having small independent stories enabled us to discover and refine early and often, giving us the flexibility to quickly adapt and respond to changes and prioritization. 
+
+A discovery made when aggregating data from three separate OpenFDA recall API calls for drugs, devices, and food was the counts for recalls were not consistent.  Our application allows the consumer to filter results on a single page by product type, date range, search term, and product distribution states.  Our limited focus group for the prototype liked our product concept and implementation, including the UI/UX.  But before investing more time and money to solve the backend logic for the counts, we wanted to get feedback from a larger audience.  Approximately 70% of software developed is rarely or never used.  That costs money, time and lost opportunity to create more valuable products.  By taking the prototype to a larger audience, we can validate the products value by soliciting feedback through surveys, logging and analytics.  Our process encourages experimenting, learning, fail fast, and then pivot or preserve.
+
+##Evidence for Vencore’s Approach  
+a. Assigned one leader and gave that person authority and responsibility and held that person accountable for the quality of    the prototype submitted.  
+b. Assembled a multidisciplinary and collaborative team that includes at a minimum five of the labor categories limited to      the Design Pool, Development Pool categories to the full stack (i.e., Design and Development) as quoted in Attachment C.     The quoter’s proposed mix of labor categories and level of effort for its working prototype, as reflected in Attachment C,    shall be evaluated to assess the quoter’s understanding and capability to supply agile delivery services.  
+c. Understand what people need, by including people in the prototype development and design process  
+d. Used at least three “human-centered design” techniques or tools  
+e. Created or used a design style guide and/or a pattern library  
+f. Performed usability tests with people  
+g. Used an iterative approach, where feedback informed subsequent work or versions of the prototype  
+h. Created a prototype that works on multiple devices, and presents a responsive design  
+i. Used at least five modern and open-source technologies, regardless of architectural layer (frontend, backend, etc)  
+j. Deployed the prototype on an Infrastructure as a Service (Iaas) or Platform as Service (Paas) provider, and indicated        which provider they used.  
+k. Wrote unit tests for their code  
+l. Setup or used a continuous integration system to automate the running of tests and continuously deployed their code to       their IaaS or PaaS provider.  
+m. Setup or used configuration management  
+n. Setup or used continuous monitoring  
+o. Deploy their software in a container (i.e., utilized operating-system-level virtualization)  
+p. Provided sufficient documentation to install and run their prototype on another machine  
+q. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge  
+
+##Vencore’s approach applied the U.S. Digital Services Playbook 
+
+1.	[Understand what people need] (https://playbook.cio.gov/#play1)
+2.	[Address the whole experience, from start to finish](https://playbook.cio.gov/#play2)
+3.	[Make it simple and intuitive](https://playbook.cio.gov/#play3)
+4.	[Build the service using agile and iterative practices](https://playbook.cio.gov/#play4)
+5.	[Structure budgets and contracts to support delivery](https://playbook.cio.gov/#play5)
+6.	[Assign one leader and hold that person accountable](https://playbook.cio.gov/#play6)
+7.	[Bring in experienced teams](https://playbook.cio.gov/#play7)
+8.	[Choose a modern technology stack](https://playbook.cio.gov/#play8)
+9.	[Deploy in a flexible hosting environment](https://playbook.cio.gov/#play9)
+10.	[Automate testing and deployments](https://playbook.cio.gov/#play10)
+11.	[Manage security and privacy through reusable processes](https://playbook.cio.gov/#play11)
+12.	[Use data to drive decisions](https://playbook.cio.gov/#play12)
+13.	[Default to open](https://playbook.cio.gov/#play13)
 
 
-Grunt Tasks
-
-For API documentation generation we us http://apidocjs.com/.
-
-<code>npm install apidoc -g</code>
-
-<code>grunt apidoc</code>
-
-Need Devops working
