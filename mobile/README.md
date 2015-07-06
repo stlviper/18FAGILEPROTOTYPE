@@ -7,11 +7,12 @@ In order to run the application,  you need to meet the following requirements:
 -	Enable Unknown sources in phone Settings
 
 ####Installation
- - Git Clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git to a directory
+ - Click on the [apk file](https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/mobile/FdaSearch.apk) from the above list of files 
+ - Click on the view full file link which will download the file to desktop
  
- - Connect USB to phone and copy the apk file from the mobile sub directory from the above directory
+ - Connect USB to phone and copy the apk file that was downloaded to the phone
  
- - Click on Next
+ - Click on the apk file to start install process
 
   ![Mobile-Image-1](https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/mobile/images/mobile_1.png?raw=true) 
 
