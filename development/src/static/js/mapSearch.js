@@ -1,3 +1,9 @@
+/*
+  author: anurodh agarwal
+  description: utility to search data for map view of the application
+  version:0.0.1
+  Date:06/24/2015
+*/
 searchApp.controller('MapSearchController', function($scope, $http, $filter, $location, sharedProperties, ospConstants) {
 
     // function to create a date from moment date
@@ -14,6 +20,7 @@ searchApp.controller('MapSearchController', function($scope, $http, $filter, $lo
     $scope.availableStates = stateList;
     $scope.products = sharedProperties.getProductsList();
 
+    // function to search the data for selected parameters or default parameters when launching screen first time.
     $scope.searchData = function() {
         var from_date = $filter('date')($scope.formatDate($scope.searchCriteria.startDate), 'yyyy-MM-dd');
         var to_date = $filter('date')($scope.formatDate($scope.searchCriteria.endDate), 'yyyy-MM-dd');
@@ -37,6 +44,7 @@ searchApp.controller('MapSearchController', function($scope, $http, $filter, $lo
             });
      }
     var data;
+    // function to populate data for returned results from the service.
     $scope.populateData = function() {
         data = new google.visualization.DataTable();
         data.addColumn('string', 'State');
@@ -50,6 +58,7 @@ searchApp.controller('MapSearchController', function($scope, $http, $filter, $lo
             $scope.currentRecordArray = $.grep($scope.products, function(e){ return e.state == stateList[i].code; });
             $scope.currentRecord = $scope.currentRecordArray[0];            
             if($scope.currentRecord  != null && $scope.currentRecord != undefined) {
+                // populate nationwide number for various recalls.
                 if($scope.currentRecord.state == 'NATIONWIDE') {
                     for(var j=0; j<$scope.currentRecord.value.length; j++) {
                         if($scope.currentRecord.value[j].type == 'food') {
@@ -82,6 +91,8 @@ searchApp.controller('MapSearchController', function($scope, $http, $filter, $lo
         }
         
     };
+
+    //function to draw the geochart with populated data
     $scope.drawDataMap = function() {
         
         var options = {
@@ -115,7 +126,7 @@ searchApp.controller('MapSearchController', function($scope, $http, $filter, $lo
         });
 
         go();
-
+        // define event listener when the window is resized the map resizes itself.
         window.addEventListener('resize', go);
         function go(){
             chart.draw(data, options);

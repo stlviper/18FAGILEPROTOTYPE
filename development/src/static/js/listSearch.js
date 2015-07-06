@@ -1,3 +1,10 @@
+/*
+  author: anurodh agarwal
+  description: utility to search data for list/detail view of the application
+  version:0.0.1
+  Date:06/24/2015
+*/
+
 searchApp.controller('ListSearchController', function($scope, $http, ospConstants, $filter, $location, sharedProperties, $anchorScroll) {
 
     // function to create a date from moment date

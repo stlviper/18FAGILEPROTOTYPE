@@ -7,7 +7,7 @@ In order to run the application,  you need to meet the following requirements:
 -	Enable Unknown sources in phone Settings
 
 ####Installation
--	Download Apk file to phone
+-	Download APK file to the phone
 -	Click on Next
 
   ![Mobile-Image-1](https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/mobile/images/mobile_1.png?raw=true) 
