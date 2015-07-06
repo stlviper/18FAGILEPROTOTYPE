@@ -7,7 +7,7 @@
 
 Consumers who purchase food, devices, and drugs may be impacted by product recalls. In an effort to increase consumer’s awareness of product recalls distributed in the consumer’s geographical area of interest, our product delivers an easy and intuitive UI for multiple device types while delivering valuable public safety information about product recalls. 
 
-Our application is hosted at http://agiledemo.vencore.com and is accessible via desktop browser, tablet or mobile devices and is 508 compliant.  Additionally Vencore delivered a RESTful API service that aggregates data from the OpenFDA API for our application to consume, and an Android application so the user can query on the go.
+Our application is hosted at http://agiledemo.vencore.com and is accessible via desktop browser, tablet or mobile devices and is not fully 508 compliant.  Additionally Vencore delivered a RESTful API service that aggregates data from the OpenFDA API for our application to consume, and an Android application so the user can query on the go.
 
 ##Narrative for Vencore’s Approach
 
