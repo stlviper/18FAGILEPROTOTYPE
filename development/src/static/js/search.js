@@ -79,6 +79,7 @@ searchApp.config(function($routeProvider) {
   })
 });
 
+// date constants to initialize dates for default search
 searchApp.value("ospConstants", {
     minDateRange:  moment().startOf('year').startOf('months').startOf('day'),
     maxDateRange: moment().subtract(1,'days'),
