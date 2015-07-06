@@ -36,7 +36,7 @@ _If you need to change the application folder or application port, update the sc
 
                 ./vencoreDemoApp.sh > "VencoreDemoAppInstall-$(date +"%Y-%m-%d:%T").log"
 
-6. Check if application started properly by using application url 
+6. Check if application started properly by using application url  
 	```http://<DockerHostIP or DNS>:<application port>  eg: http://192.162.1.1:80```
 
 
@@ -47,18 +47,18 @@ _If you need to change the application folder or application port, update the sc
 2. npm
 3. pm2 
 4. grunt-cli
-5. git 
+5. git
 
+### Install instructions
 1. Clone vencore git repository to local folder "vencoredemo".
 
 	```git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo```
 
-3. Change to folder "vencoredemo/development/src" and execute the following command to start the application on port 8080. 
+2. Change to folder "vencoredemo/development/src" and execute the following command to start the application on port 8080. 
 _If port 8080 is not available update 8080 to avialble port in the following command before executing it._
 
-	   sudo PORT="8080" pm2 start app.js
+	```sudo PORT="8080" pm2 start app.js```
 
-4. Test the application using the below url replacing the appropriate values 
+3. Test the application using the below url replacing the appropriate values 
 
         http://<Host IP or DNS>:<application port>  eg: http://192.162.1.1:8080
-
