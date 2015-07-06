@@ -7,7 +7,7 @@ These instructions were tested on ubuntu 14.04.1 LTS operating system with nodej
 1. Linux OS. (Vencore used Ubuntu 14.04.1 LTS with nodejs version 0.12.4)
 2. Docker client 1.2.0 is installed
 3. Docker daemon 1.2.0 is installed
-4. Git for linux
+4. git and gzip are installed.
 4. Execute the following command to make sure docker client and daemon is running               
                ```sudo docker version```
 5. Docker server should have internet access to be able to download Docker image from Docker Hub.
@@ -19,12 +19,12 @@ These instructions were tested on ubuntu 14.04.1 LTS operating system with nodej
 
 2. Change to the folder created in step 1 and clone vencore git repository. 
 
-```sudo git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE/vfdademo.git```
+```sudo git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo```
 
-3. change to folder "18FAGILEPROTOTYPE/dist" and make sure you have the following files.
+3. change to folder "vencoredemo/dist" and make sure you have the following files.
                 
                 Dockerfile
-                archive.tar
+                archive.tar.gz
                 vencoreDemoApp.sh
              
 4. Execute the following command to make the file executable
@@ -40,11 +40,11 @@ These instructions were tested on ubuntu 14.04.1 LTS operating system with nodej
 
 ### Install application on another machine (non-docker):
 1. Make sure you have nodejs, npm, pm2, grunt-cli and git installed.
-2. Clone vencore git repository to local folder.
+2. Clone vencore git repository to local folder "vencoredemo".
 
-	```sudo git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE/vfdademo.git```
+	```sudo git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo```
 
-3. Change to folder "18FAGILEPROTOTYPE/vfdademo" and execure the following command to start the application on port 80. If port 80 is not available update 80 to avialble port in the following command before executing it.
+3. Change to folder "vencoredemo/development/src" and execute the following command to start the application on port 80. If port 80 is not available update 80 to avialble port in the following command before executing it.
 
 	   sudo PORT="80" pm2 start app.js
 

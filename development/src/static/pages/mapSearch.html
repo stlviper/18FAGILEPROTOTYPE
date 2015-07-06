@@ -1,25 +1,25 @@
 <div>
     <nav data-asm-slide-left class="navbar navbar-default">
         <div style="margin-left:3%; margin-right:3%; margin-top:3%;">
-            <div class="symptom"><strong>Date From</strong></div> 
+            <div class="symptom"><strong><label for="Date From">Date From</label></strong></div> 
             <div class="form-group col-centered">
                 <datepicker date-format="MM/dd/yyyy" date-max-limit={{searchCriteria.endDate}} 
                 date-set={{searchCriteria.startDate}}
                    button-prev="<i class='fa fa-arrow-left'></i>" button-next="<i class='fa fa-arrow-right'></i>">
-                    <input type="text" ng-model="searchCriteria.startDate"  class="form-control" readonly="true" tabindex=1>
+                    <input type="text" ng-model="searchCriteria.startDate" title="Date From" class="form-control" readonly="true" tabindex=1>
                 </datepicker>
             </div>
-            <div class="symptom"><strong>Date To</strong></div> 
+            <div class="symptom" title="Date To"><strong>Date To</strong></div> 
             <div class="form-group col-centered">
                 <datepicker date-format="MM/dd/yyyy" date-min-limit={{searchCriteria.startDate}} date-set={{searchCriteria.endDate}} button-prev="<i class='fa fa-arrow-left'></i>" button-next="<i class='fa fa-arrow-right'></i>">
-                    <input type="text" ng-model="searchCriteria.endDate"  class="form-control" readonly="true" tabindex=2 >
+                    <input type="text" ng-model="searchCriteria.endDate" title="Date To" class="form-control" readonly="true" tabindex=2 >
                 </datepicker>
             </div>
-            <div class="symptom"><strong>Search Term</strong></div> 
+            <div class="symptom" title="Search Term"><strong>Search Term</strong></div> 
             <div class="form-group col-centered">
-                <input class="form-control" type="text" ng-model="searchCriteria.keyTerm" tabindex=3/> 
+                <input class="form-control" type="text" title="Search Term" ng-model="searchCriteria.keyTerm" tabindex=3/> 
             </div>
-            <div class="symptom"><strong>Recall Type</strong></div>    
+            <div class="symptom" title="Recall Type"><strong>Recall Type</strong></div>    
             <div class="form-group col-centered">
                 <multi-select
                     name="recall_select"
@@ -28,13 +28,13 @@
                     show-filters="true"
                     value-field="code"
                     label-field="name"
-                tabindex=4></multi-select>
+                tabindex=4 title="Recall Type"></multi-select>
             </div>
             <div data-asm-control="slideLeft" class="inlineDiv" ng-click="searchData()" tabindex=5>
-                <a class="btn btn-primary"><span style="color:white">Search</span></a>
+                <a class="btn btn-primary" title="Search"><span style="color:white">Search</span></a>
             </div>
             <div data-asm-control="slideLeft" class="inlineDiv" tabindex=6>
-                <a class="btn btn-primary">Close</a>
+                <a class="btn btn-primary" title="Close">Close</a>
             </div>
         </div>
     </nav>
@@ -72,8 +72,16 @@
                             <span ng-if="searchCriteria.keyTerm != ''"> {{searchCriteria.keyTerm}} </span>
                             <br>
                         </div>
+                        <div class="col-sm-4">
+                            Please click on a state to view detail recall listing.
+                        </div>
+
+                        <div class="col-sm-8 text-left">
+                            <span style="color:red; font-style:italic;">*Results are based on the count pattern search API & excludes state combinations.</span>
+                        </div>
                     </div>
-                    Please click on a state to view detail recall listing.
+                    
+                    
                     <div id='regions_div' style="width:100%, height:100%"></div>
                     <strong>Nationwide* Recall for: </strong>  
                             <span ng-repeat="x in searchCriteria.selectedRecall">
@@ -92,7 +100,13 @@
                                 <span ng-if="!$last">, </span>
                             </span>
                     <br>
-                    *Please note that nationwide specific initial distribution states for nationwide recalls cannot be determined.
+                    <div class="col-sm-6">
+                        *Please note that initial distribution states for nationwide recalls cannot be determined.
+                        </div>
+                        <div class="col-sm-6 text-left">
+                            <span style="color:red; font-style:italic;">*Results are based on the count pattern search API & excludes state combinations.</span>
+                        </div>
+                    
                 </div>
             </div>
         </div>
