@@ -1,3 +1,10 @@
+ /**
+ * author: venu duggireddy
+ * description: Utility functions to suppprt API calls
+ * version:0.0.1
+ * Date:06/20/2015
+ */
+ 
  var HashMap = require('hashmap'),
   _ = require('lodash-node'),
   config = require('./config'),
@@ -5,6 +12,7 @@
    fs = require('fs'),
   utils = require('./utils');
 
+// list of US states
 var usstates = [
     {
         "name": "Alabama",
@@ -248,6 +256,9 @@ var usstates = [
     }
 ];
 
+/*
+    returns map of US states
+ */
 exports.recallstatemap = function(){
     var map = new HashMap();
     _.forEach(usstates, function(value){
@@ -257,6 +268,9 @@ exports.recallstatemap = function(){
     return map;
 };
 
+/**
+ * writes log
+ */
 exports.logrequest = function(request, response, next){
   var start = +new Date();
   var stream = process.stdout;
@@ -287,7 +301,9 @@ exports.getEnforcementUrl = function(product_type){
 
 };
 
-
+/**
+ * aggregated results for map view
+ */
 exports.aggregateResults = function(results){
 
   var statesMap = utils.recallstatemap();
@@ -342,7 +358,7 @@ exports.aggregateResults = function(results){
 };
 
 /**
- * 
+ * aggregated results for list view
  * 
  */
  
@@ -403,6 +419,7 @@ exports.getAggegatedSearchResults = function (results) {
 
 
 /*
+ * dynamically create config file for supprting DevOps
  */
 exports.createConfigFiles = function (port) {
     require('dns').lookup(require('os').hostname(), function (err, add, fam) {

@@ -1,8 +1,9 @@
 
 //Developers : Mustapha Raji & Varma Anush
 //File : Grunt File
-//Version : 1.0.0
+//Version : 0.0.1
 //Date : 06/24/2015
+//Description: Grunt task for the application
 
 
 module.exports = function(grunt) {

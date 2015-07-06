@@ -5,7 +5,7 @@ Vencore built the prototype utilizing a full open source stack. Based on the pro
 The Vencore team created custom APIs utilizing the **_Node.js_** framework as a wrapper over the OpenFDA.org APIs and generate result mashups for different clients to consume. The custom module parses the **_JSON_** data received from the **_REST_** calls to OpenFDA APIs creates a custom result set and provides the results in the light-weight **_JSON_** format to its clients. The **_Express_** http server routes the calls appropriately based on defined routes.  
 
 **_Figure 1: Vencore FDASearch prototype application architecture_**  
-![Application Architecture] (https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/development/architecture/18F_Diagram_001a.png)
+![Application Architecture] (https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/evidence/18F_Diagram_001a.png)
 
 The web application views are generated using **_Bootstrap/HTML5_** in order to support the many different form factors. The **_AngularJS_** declarative programming style helps greatly reduce the amount of code needed to bring the view and the model together. **_HTML5_** along with **_Bootstrap_** helped create web pages that could be scaled easily to and viewed on any form factor with little effort. In addition to the web application, a **_Android native app_** based on **_SDK version 5.0_** is built to consume the same services exposed by the FDASearch **_Nodejs_** application and provide easy access to the recall information. The web application is hosted on an **_AWS EC2_** instance.  
 
@@ -13,6 +13,6 @@ The web application views are generated using **_Bootstrap/HTML5_** in order to 
 The Vencore team used **_Jenkins_** to manage the Continuous Integration/Continuous Deployment process. Jobs were built to check out code from **_GitHub_** on a commit to the repository. Jenkins then builds the code using **_Grunt_** scripts. After a successful build, Jenkins runs unit test cases written in **_Mocha_**. Once the test cases are successful, Jenkins then creates a deployment package and invokes a Docker file to deploy the application to an **_AWS EC2_** instance in a **_Docker_** container and start it.  Integration tests written in **_Protractor for Selenium_** are then executed by Jenkins as the next step. Jenkins uses **_PhantomJS_** to spawn Headless browser instances to run Protractor scripts. If successful, the application is deployed to a Quality Control (QC) environment. For the success of a DevOps implementation, automating as many tasks as possible in the integration and delivery pipeline is crucial. **_Grunt_**, a JavaScript Task Runner helps acheive this goal with great ease because of its many available plugins.  
 
 **_Figure 2: CI/CD process_**  
-![CI/CD Process] (https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/development/architecture/18F_Diagram_002a.png)
+![CI/CD Process] (https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/evidence/Evidence-l/Evidence-l-1.png)
  
 As part of the continuous monitoring of code for security, the code is scanned nightly using **_NodeJsScan_** static code analysis tool.  As the vulnerabilities are fixed and the security officer is satisfied, the code is then deployed into a production environment via a separate **_Jenkins_** job, into its **_docker_** container.   
