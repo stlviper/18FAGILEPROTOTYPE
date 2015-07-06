@@ -3,11 +3,11 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-body">
-                <div class="row">
-                    <div class="col-sm-6">
+                <div class="row detailssection-header">
+                    <div class="col-xs-6">
                         <h4>Product Details</h4>
                     </div>
-                    <div class="col-sm-6 text-right">
+                    <div class="col-xs-6 text-right">
                     <a href="#listSearch" title="Back" class="btn btn-primary">
                         Back
                     </a>
@@ -39,7 +39,11 @@
                     <div class="col-sm-2 detailscol1">Reason for Recall:</div>
                     <div class="col-sm-10 detailscol2">{{recallDetails.reason_for_recall}}</div>
                 </div>
-                <h4>Event Details</h4>
+                <div class="row detailssection-header">
+                    <div class="col-sm-12">
+                        <h4>Event Details</h4>
+                    </div>
+                </div>
                 <div class="row detailssection-odd">
                     <div class="col-sm-2 detailscol1">Event Id:</div>
                     <div class="col-sm-10 detailscol2">{{recallDetails.event_details.event_id}}</div>
