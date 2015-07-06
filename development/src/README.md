@@ -1,4 +1,4 @@
-### Demo Application 
+### vencore Agile Demo Application 
 
 
 Instruction to install and run application on other machine
