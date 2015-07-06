@@ -1,23 +1,108 @@
-# vfdademo
-Demo app for testing cool new technologies using NodeJS, Express, Angurlar and other ...
+Application requirements
 
-pre:
-nodejs
-npm
-bower
+In order to run the application,  you need to meet the following requirements:
 
-npm init
-npm install --save express
-npm install --save-dev  grunt
-npm install --save request
+-	Android 5.0 (Android Lollipop) or later installed
+-	Developer options enabled in your phone settings
+-	Enable Unknown sources in phone Settings
+-	
+
+Installation
+
+-	Download Apk file to phone.
+-	Click on Next
+ 
+
+-	Click on Install
+  
+
+-	Click on Open
+ 
 
 
-Grunt Tasks
 
-For API documentation generation we us http://apidocjs.com/.
+ 
 
-<code>npm install apidoc -g</code>
 
-<code>grunt apidoc</code>
 
-Need Devops working
+
+
+
+
+
+
+Functionality
+
+
+- Agree with disclaimer to start using the application
+
+ 
+
+
+- Map view to show the total count of recalled drugs, food, and device for all states
+
+ 
+
+
+
+
+
+- Search for recalled product by type and/or date range
+
+ 
+-  Keyword search
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-	Voice search
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-	List view summary of the found recalled products
+
+ 
+
+
+
+
+- Detail information for the product
+
