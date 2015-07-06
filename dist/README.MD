@@ -42,11 +42,11 @@ These instructions were tested on ubuntu 14.04.1 LTS operating system with nodej
 1. Make sure you have nodejs, npm, pm2, grunt-cli and git installed.
 2. Clone vencore git repository to local folder "vencoredemo".
 
-	```sudo git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo```
+	```git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo```
 
-3. Change to folder "vencoredemo/development/src" and execute the following command to start the application on port 80. If port 80 is not available update 80 to avialble port in the following command before executing it.
+3. Change to folder "vencoredemo/development/src" and execute the following command to start the application on port 8080. If port 8080 is not available update 8080 to avialble port in the following command before executing it.
 
-	   sudo PORT="80" pm2 start app.js
+	   sudo PORT="8080" pm2 start app.js
 
-4. test the application using url ```http://<Host IP or DNS>:<application port> ```  eg: http://192.162.1.1:80
+4. test the application using url ```http://<Host IP or DNS>:<application port> ```  eg: http://192.162.1.1:8080
 
