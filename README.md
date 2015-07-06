@@ -41,7 +41,7 @@ f. [Performed usability tests with people](https://github.com/vencoreinc/18FAGIL
 g. [Used an iterative approach, where feedback informed subsequent work or versions of the prototype](https://github.com/vencoreinc/18FAGILEPROTOTYPE/wiki/Evidence-g)  
 h. [Created a prototype that works on multiple devices, and presents a responsive design](https://github.com/vencoreinc/18FAGILEPROTOTYPE/wiki/Evidence-h)  
 i. [Used at least five modern and open-source technologies, regardless of architectural layer (frontend, backend, etc)](https://github.com/vencoreinc/18FAGILEPROTOTYPE/wiki/Evidence-i)  
-j. [Deployed the prototype on an Infrastructure as a Service (Iaas) or Platform as Service (Paas) provider, and indicated which provider they used.](https://github.com/vencoreinc/18FAGILEPROTOTYPE/wiki/Evidence-j)  
+j. [Deployed the prototype on an Infrastructure as a Service (IaaS) or Platform as Service (PaaS) provider, and indicated which provider they used.](https://github.com/vencoreinc/18FAGILEPROTOTYPE/wiki/Evidence-j)  
 k. [Wrote unit tests for their code](https://github.com/vencoreinc/18FAGILEPROTOTYPE/wiki/Evidence-k)  
 l. [Setup or used a continuous integration system to automate the running of tests and continuously deployed their code to their IaaS or PaaS provider.](https://github.com/vencoreinc/18FAGILEPROTOTYPE/wiki/Evidence-l)  
 m. [Setup or used configuration management](https://github.com/vencoreinc/18FAGILEPROTOTYPE/wiki/Evidence-m)  
