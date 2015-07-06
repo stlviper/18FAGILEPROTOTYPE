@@ -7,6 +7,7 @@ These instructions were tested on ubuntu 14.04.1 LTS operating system with nodej
 1. Linux OS. (Vencore used Ubuntu 14.04.1 LTS with nodejs version 0.12.4)
 2. Docker client 1.2.0 is installed
 3. Docker daemon 1.2.0 is installed
+4. Git for linux
 4. Execute the following command to make sure docker client and daemon is running               
                ```sudo docker version```
 5. Docker server should have internet access to be able to download Docker image from Docker Hub.
