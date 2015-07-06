@@ -30,9 +30,6 @@ echo "extract archive.tar to application folder $AppDir"
 #extract application archive using the following command.
 sudo tar -xzf ./archive.tar.gz -C $AppDir
 
-echo "copy config.js to applicaton "$AppDir/static/js/" folder. If required update values of "host_ip_address" and "host_port_number" with docker machine DNS or IP and available port number for application port"
-sudo cp -f config.js $AppDir/static/js/
-
 echo "Create Docker container "vencore-demo" and start application"
 #execute the following command to build the container from the image created in previous steps and then start vencore demo application.
 sudo docker run --name vencore-demo -it -d -P -p $PMap:$PMap -v $AppDir:$AppDir vencore-nodejs-demo /bin/bash -c "PORT=80 pm2 start $AppDir/app.js && tail -f /dev/null"
