@@ -61,4 +61,4 @@ _If port 8080 is not available update 8080 to avialble port in the following com
 
 3. Test the application using the below url replacing the appropriate values 
 
-        http://<Host IP or DNS>:<application port>  eg: http://192.162.1.1:8080
+	```http://<Host IP or DNS>:<application port>  eg: http://192.162.1.1:8080```
