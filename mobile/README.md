@@ -7,8 +7,11 @@ In order to run the application,  you need to meet the following requirements:
 -	Enable Unknown sources in phone Settings
 
 ####Installation
--	Download APK file to the phone
--	Click on Next
+ - Git Clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git to a directory
+ 
+ - Connect USB to phone and copy the apk file from the mobile sub directory from the above directory
+ 
+ - Click on Next
 
   ![Mobile-Image-1](https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/mobile/images/mobile_1.png?raw=true) 
 
