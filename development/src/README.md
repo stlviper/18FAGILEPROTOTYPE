@@ -14,6 +14,8 @@ node app.js
 PORT="8080" node app.js // to run on port 8080
 ```
 
+Additional details how to deploy the application using docker are in dist directory in [Github](https://github.com/vencoreinc/18FAGILEPROTOTYPE/tree/master/dist)
+
 ### Grunt tasks 
 
 To run the following grunt tasks from the command line you need to install gurnt-cli globally
