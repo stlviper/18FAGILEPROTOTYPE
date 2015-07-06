@@ -19,7 +19,7 @@ These instructions were tested on ubuntu 14.04.1 LTS operating system with nodej
 
 2. Change to the folder created in step 1 and clone vencore git repository. 
 
-```sudo git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo```
+```git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo```
 
 3. change to folder "vencoredemo/dist" and make sure you have the following files.
                 
@@ -33,7 +33,7 @@ These instructions were tested on ubuntu 14.04.1 LTS operating system with nodej
 
 5. Execute the following command to build the docker container and launch application on port 80. If you need to change the application folder or application port, update the script file (vencoreDemoApp.sh) before executing the script file. Update "AppDir" variable to change application folder eg: AppDir="/vencore/docker/vfdademo-master". Update "PMap" variable to change application port eg: PMap="80".
 
-                sudo ./vencoreDemoApp.sh > "VencoreDemoAppInstall-$(date +"%Y-%m-%d:%T").log"
+                ./vencoreDemoApp.sh > "VencoreDemoAppInstall-$(date +"%Y-%m-%d:%T").log"
 
 6. Check if application started properly by using application url ```http://<DockerHostIP or DNS>:<application port> ```  eg: http://192.162.1.1:80
 
