@@ -3,7 +3,7 @@
 
 Instruction to install and run application on other machine
 
-Prerequisites is to install NodeJS (min version 0.10.18) on operation system. 
+Pre-Requisites is to install [NodeJS](https://nodejs.org/) (min version 0.10.18) 
 
 ```
 git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo
