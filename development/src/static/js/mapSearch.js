@@ -104,6 +104,7 @@ searchApp.controller('MapSearchController', function($scope, $http, $filter, $lo
         var selectedItem = chart.getSelection()[0];
             if (selectedItem) {
                 var y = data.getValue(selectedItem.row,0);
+                sharedProperties.setStateCount(data.getValue(selectedItem.row,1));
                 var result = $.grep(stateList, function(e){ return e.name == y; });
                 $scope.searchCriteria.states = [{name: result[0].name, code:result[0].code}];
                 sharedProperties.setGlobalSearchCriteria($scope.searchCriteria);

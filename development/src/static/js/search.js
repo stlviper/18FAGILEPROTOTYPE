@@ -1,5 +1,5 @@
 'use strict';
-//var constants = {baseUrl: "http://" + global_constants.host_ip_address +":"+ global_constants.host_port_number+"/"};
+var constants = {baseUrl: "http://" + global_constants.host_ip_address +":"+ global_constants.host_port_number+"/"};
 var searchApp = angular.module('searchApp', ['ngRoute', 'ngSanitize', 'ui.select', 'shalotelli-angular-multiselect', 'daterangepicker', '720kb.datepicker', 'slideMenu']);
 
 searchApp.service('sharedProperties', function(ospConstants) {
@@ -10,6 +10,7 @@ searchApp.service('sharedProperties', function(ospConstants) {
                                 keyTerm: ''};
     var productsList = {};
     var reloadData = true;
+    var stateCount = '';
     return {
             getRecallDetails: function () {
                 return recallDetails;
@@ -34,7 +35,14 @@ searchApp.service('sharedProperties', function(ospConstants) {
             },
             setReloadData: function(value) {
                 reloadData = value;
+            },
+            getStateCount: function() {
+                return stateCount;
+            },
+            setStateCount: function(value) {
+                stateCount = value;
             }
+
     };
 })
 
@@ -44,19 +52,22 @@ searchApp.config(function($routeProvider) {
   // route for the list search page
     .when('/', {
     templateUrl: '/pages/mapSearch.html',
-    controller: 'MapSearchController'
+    controller: 'MapSearchController',
+    reloadOnSearch: 'true'
   })
 
   // route for map search page
   .when('/listSearch', {
     templateUrl: '../pages/listSearch.html',
-    controller: 'ListSearchController'
+    controller: 'ListSearchController',
+    reloadOnSearch: 'true'
   })
 
   // route for the details page
   .when('/detailsPage', {
     templateUrl: '../pages/detailsPage.html',
-    controller: 'DetailsController'
+    controller: 'DetailsController',
+    reloadOnSearch: 'true'
   })
 });
 
