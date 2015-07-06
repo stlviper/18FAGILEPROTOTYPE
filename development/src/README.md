@@ -1,32 +1,27 @@
-### Applicaiton is build using [NodeJS](https://nodejs.org/), [Express](http://expressjs.com/), [Angurlar](https://angular.io/),[Grunt](http://gruntjs.com/), [Protractor](https://angular.github.io/protractor/#/),[Selenium](http://www.seleniumhq.org/), [Mocha](http://mochajs.org/)  and other ...
+### Demo Application 
 
-Instruction to install and run applicaiton on other mechine
+
+Instruction to install and run application on other machine
 
 Prerequisites is to install NodeJS (min version 0.10.18) on operation system. 
 
-<code>
-git clone https://github.com/venuduggireddy/vfdademo.git vfdademo
-cd vfdademo
-node app.js // default port is 80
-</code>
+```
+git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo
+cd vencoredemo/development/src
+ // default port is 80
+node app.js
+// To run the application on a different port
+PORT="8080" node app.js // to run on port 8080
+```
 
-To run the app in a different port 
+### Grunt tasks 
 
+To run the following grunt tasks from the command line you need to install gurnt-cli globally
 
-### [Grunt](http://gruntjs.com/) Tasks:
+`
+npm install -g grunt-cli
+`
 
-Grunt Scripts support the continuous integration, multiple tasks were designed and made available to Jenkins; like buildTask, unitTest, integrationTest ... The implementation of tasks requires a number of dependencies that can be loaded and installed using the following commands : </br>
- 
- <code>npm install grunt-contrib-copy --save-dev</code>        // install contrib-copy </br>
- <code>npm install grunt-contrib-clean --save-dev </code>      // install contrib-clean </br>
- <code>npm install grunt-contrib-compress --save-dev </code>   // install contrib-compress </br>
- <code>npm install grunt-mocha-test --save-dev </code>          //install contrib-test  </br> 
- <code>npm install grunt-zip --save-dev </code>                 //install contrib-zip  </br>
- <code>npm install grunt-properties-reader --save-dev </code>    // install properties-reader </br>
- <code>npm install grunt-protractor-runner --save-dev </code>    // install protractor-runner </br>
- 
- ### Following Grunt tasks are availabe
-  
 These are the main tasks that are exposed to Jenkins: </br>
 * buildTask : <code> grunt buildTask</code> </br>
 This task does the clean up, creates the necessary directories and starts the build ,then once the archive file is created it will be placed in the dist folder </br>
@@ -34,11 +29,12 @@ This task does the clean up, creates the necessary directories and starts the bu
 * unitTest : <code> grunt unitTest </code> </br>
 the task will run the unit test , please note that  the unit test is implemented by using [Mocha Framework](http://mochajs.org/) </br>
 
-* intergationTest : <code> grunt intergationTest </code> </br>
-the task will run the integration test which is implemented by using [Protractor Framework](https://angular.github.io/protractor/#/) ,  a Framework that internally uses [Selenium](http://www.seleniumhq.org/) Server</br>
+* integrationTest: <code> grunt integrationTest </code> </br>
+the task will run the integration test which is implemented by using [Protractor Framework](https://angular.github.io/protractor/#/) ,  and internally uses [Selenium](http://www.seleniumhq.org/) Server</br>. Following URL has the instructions to setup [selenium server](https://github.com/angular/protractor/blob/master/docs/server-setup.md) 
  
 
-For generating API doucumentation we used [apidocjs](http://apidocjs.com/)
+For API documentation generation we used [apidocjs](http://apidocjs.com/)
+Install apidoc globally and run the grunt task as shown below. 
 
 <code>npm install apidoc -g</code>
 
