@@ -1,7 +1,15 @@
+/*
+  author: anurodh agarwal
+  description: search utility to define global service, variables and routes
+  version:0.0.1
+  Date:06/24/2015
+*/
+
 'use strict';
 var constants = {baseUrl: "http://" + global_constants.host_ip_address +":"+ global_constants.host_port_number+"/"};
 var searchApp = angular.module('searchApp', ['ngRoute', 'ngSanitize', 'ui.select', 'shalotelli-angular-multiselect', 'daterangepicker', '720kb.datepicker', 'slideMenu']);
 
+// services defined to share data between screens
 searchApp.service('sharedProperties', function(ospConstants) {
     var recallDetails = '';
     var globalSearchCriteria = {states: [stateList[0]], selectedRecall: recallTypes,
@@ -46,7 +54,7 @@ searchApp.service('sharedProperties', function(ospConstants) {
     };
 })
 
-// configure our routes
+// routes to navigate between different application screens.
 searchApp.config(function($routeProvider) {
   $routeProvider
   // route for the list search page
