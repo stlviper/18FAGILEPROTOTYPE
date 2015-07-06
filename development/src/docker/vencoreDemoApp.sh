@@ -28,7 +28,7 @@ sudo mkdir -p $AppDir
 
 echo "extract archive.tar to application folder $AppDir"
 #extract application archive using the following command.
-sudo tar -xf ./archive.tar -C $AppDir
+sudo tar -xzf ./archive.tar.gz -C $AppDir
 
 echo "copy config.js to applicaton "$AppDir/static/js/" folder. If required update values of "host_ip_address" and "host_port_number" with docker machine DNS or IP and available port number for application port"
 sudo cp -f config.js $AppDir/static/js/
