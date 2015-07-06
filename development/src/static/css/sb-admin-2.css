@@ -186,7 +186,7 @@ body {
 	padding-top: 0px;
 }
 
-body#page1{background-color:#11697d;background-image: url(../../img/header-bg.jpg); background-repeat: repeat-x;}
+body#page1{background-color:#11697d;background-image: url(../../img/header-bg.jpg); background-repeat: repeat-x; background-position:center center;}
 body#page2{background-color:#11697d; background-image: url(../../img/background_page.jpg); background-repeat: repeat-x;padding: 0px;}
 body#page3{background-color:#00f;}
 
