@@ -3,7 +3,7 @@
 
 Instruction to install and run application on other machine
 
-Pre-Requisites is to install [NodeJS](https://nodejs.org/) (min version 0.10.18) 
+Pre-Requisites is to install [NodeJS](https://nodejs.org/) (min version 0.10.18) and [NPM](https://docs.npmjs.com/getting-started/installing-node)
 
 ```
 git clone https://github.com/vencoreinc/18FAGILEPROTOTYPE.git vencoredemo
