@@ -1,7 +1,7 @@
 ### Vencore Agile Demo Application 
 
 
-Instruction to install and run application on other machine
+Instructions to install and run application
 
 Pre-Requisites is to install [NodeJS](https://nodejs.org/) (min version 0.10.18) and [NPM](https://docs.npmjs.com/getting-started/installing-node)
 
