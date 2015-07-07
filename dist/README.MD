@@ -7,7 +7,7 @@ These instructions were tested on ubuntu 14.04.1 LTS operating system with node.
 1. Linux OS (Vencore used Ubuntu 14.04.1 LTS with nodejs version 0.12.4)
 2. Docker client 1.2.0 is installed
 3. Docker daemon 1.2.0 is installed
-4. git and gzip are installed
+4. Git and gzip are installed
 4. Execute the following command to check if Docker client and daemon are available    
 
                sudo docker version
@@ -34,7 +34,7 @@ These instructions were tested on ubuntu 14.04.1 LTS operating system with node.
 
                 sudo chmod +x vencoreDemoApp.sh
 
-5. Execute the following command to build the docker container and launch application on port 80  
+5. Execute the following command to build the Docker container and launch application on port 80  
 
 	_If you need to change the application folder or application port, update the script file (vencoreDemoApp.sh) before 	executing the script file. Update "AppDir" variable to change application folder eg: 			
 	AppDir="/vencore/docker/vfdademo-master". Update "PMap" variable to change application port eg: PMap="80"._
