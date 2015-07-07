@@ -13,6 +13,7 @@ node app.js
 // To run the application on a different port
 PORT="8080" node app.js // to run on port 8080
 ```
+![Install instructions](https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/evidence/Git_Clone_and_Run_App.gif)
 
 ### Docker Install
 
