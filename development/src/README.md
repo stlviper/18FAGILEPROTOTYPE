@@ -28,15 +28,15 @@ npm install -g grunt-cli
 
 These are the main tasks that are exposed to Jenkins: </br>
 * buildTask : <code> grunt buildTask</code> </br>
-This task does the clean up, creates the necessary directories and starts the build ,then once the archive file is created it will be placed in the dist folder </br>
+This task does the clean up, creates the necessary directories and starts the build process. Upon completion archive file is created it will be placed in the dist folder usder src root dirctory </br>
  
 * unitTest : <code> grunt unitTest </code> </br>
-the task will run the unit test , please note that  the unit test is implemented by using [Mocha Framework](http://mochajs.org/) </br>
+This task will run the unit test implemented by using [Mocha Framework](http://mochajs.org/) </br>
 
 * integrationTest: <code> grunt integrationTest </code> </br>
-the task will run the integration test which is implemented by using [Protractor Framework](https://angular.github.io/protractor/#/) ,  and internally uses [Selenium](http://www.seleniumhq.org/) Server.
-* Following URL has the instructions to setup [selenium server](https://github.com/angular/protractor/blob/master/docs/server-setup.md) 
-* Setup headless browswer testing on linux [Github](https://github.com/vencoreinc/18FAGILEPROTOTYPE/tree/master/development/src/test)
+This task will run the integration test which is implemented by using [Protractor Framework](https://angular.github.io/protractor/#/) ,  and internally uses [Selenium](http://www.seleniumhq.org/) Server.
+* Following URL has the instructions on how to setup [selenium server](https://github.com/angular/protractor/blob/master/docs/server-setup.md) 
+* Following URL has the instructions on how to setup headless browswer testing in linux [Github](https://github.com/vencoreinc/18FAGILEPROTOTYPE/tree/master/development/src/test)
  
 
 For API documentation generation we used [apidocjs](http://apidocjs.com/)
