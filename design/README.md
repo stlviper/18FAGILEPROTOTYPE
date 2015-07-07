@@ -1,5 +1,6 @@
 ### Design  
-Design discussion goes here.
+
+The Vencore product manager worked with the focus group and the UI/UX designer to come up with the designs for the prototype. The Vencore team used both protosketching and static design to start the discussions and agree upon a design.The design folder shows some of the artifacts generated during this process. 
 
 This Design folder contains Wireframe/Prototype images for 18F FDA Vencore application.
 
@@ -20,8 +21,6 @@ Tools used: GIMP 2, Adobe Photoshop CS6, Adobe Illustrator CS6, Adobe Acrobat.
 * VENCORE_Style Guide_10 31 2014-3.jpg
 * VENCORE_Style Guide_10 31 2014-4.jpg
 * VENCORE_Style Guide_10 31 2014-5.jpg
-
-
 
 ===================================================================
 
