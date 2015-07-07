@@ -1,4 +1,4 @@
-####Application requirements
+#### Application requirements
 
 In order to run the application,  you need to meet the following requirements:
 
@@ -6,7 +6,7 @@ In order to run the application,  you need to meet the following requirements:
 -	Developer options enabled in your phone settings
 -	Enable Unknown sources in phone Settings
 
-####Installation
+#### Installation
  - Click on the [apk file](https://github.com/vencoreinc/18FAGILEPROTOTYPE/blob/master/mobile/FdaSearch.apk) from the above list of files 
  - Click on the view full file link which will download the file to desktop
  
