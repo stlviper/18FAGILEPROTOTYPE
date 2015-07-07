@@ -1,8 +1,8 @@
 ### Design  
 
-The Vencore product manager worked with the focus group and the UI/UX designer to come up with the designs for the prototype. The Vencore team used both protosketching and static design to start the discussions and agree upon a design.The design folder shows some of the artifacts generated during this process. 
+The Vencore Product Manager worked with the focus group and the UI/UX designer to come up with the designs for the prototype. The Vencore team used both protosketching and static design to start the discussions and agree upon a design.The design folder shows some of the artifacts generated during this process. 
 
-This Design folder contains Wireframe/Prototype images for 18F FDA Vencore application.
+This design folder contains Wireframe/Prototype images for 18F FDA Vencore application.
 
 ===================================================================
 
